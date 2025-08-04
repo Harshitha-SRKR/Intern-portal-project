@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav>
+    <h1>Fundraising Intern Portal</h1>
+    <ul>
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="/leaderboard">Leaderboard</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="dashboard-card">
+      <h2 id="intern-name">Intern Name</h2>
+      <p>Referral Code: <span id="referral-code"></span></p>
+      <p>Total Donations Raised: ₹<span id="donations"></span></p>
+    </div>
+    <div class="rewards-section">
+      <h3>Rewards & Unlockables</h3>
+      <div class="rewards-grid">
+        <div class="reward-card">🎉 Free Swag</div>
+        <div class="reward-card">🏅 Certificate</div>
+        <div class="reward-card">🚀 LOR</div>
+      </div>
+    </div>
+  </main>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
